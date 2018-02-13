@@ -3,8 +3,14 @@
 - - -
 ## 使用：
 ### **一键安装脚本：**
-#### ``` bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/install.sh)```
+#### ```bash
+bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/install.sh)
+```
 ### **一键卸载脚本：**
-#### ``` bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/uninstall.sh)```
+#### ```bash
+bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/uninstall.sh)
+```
 ### **一键重装脚本：** <br />
-#### ``` bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/reinstall.sh)```
+#### ```bash
+bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/reinstall.sh)
+```
