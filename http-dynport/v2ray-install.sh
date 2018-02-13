@@ -27,11 +27,11 @@ function checkos(){
 
 function checkenv(){
     if [[ $OS = "centos" ]]; then
-	    yum upgrade -y
+	yum upgrade -y
         yum update -y
         yum install wget curl ntpdate -y
     else
-	    apt-get -y upgrade
+	apt-get -y upgrade
         apt-get -y update
         apt-get -y install wget curl ntpdate
     fi
@@ -43,14 +43,14 @@ function install_v2ray(){
     checkos
     checkenv
     ntpdate time.nist.gov
-    bash <(curl https://http-dynport.v2ray-install.ml/install-release.sh)
+    bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/install-release.sh)
     rm -rf "/etc/v2ray/config.json"
-    wget -qO /etc/v2ray/config.json "https://http-dynport.v2ray-install.ml/config.json"
-	Address=$(curl https://ipinfo.io/ip)
+    wget -qO /etc/v2ray/config.json "https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/config.json"
+    Address=$(curl https://ipinfo.io/ip)
     UUID=$(cat /proc/sys/kernel/random/uuid)
     sed -i "s/3922f464-d02d-4124-82bf-ad350c19aacf/${UUID}/g" "/etc/v2ray/config.json"
     service v2ray restart
-	clear
+    clear
     echo -e "您的连接信息如下："
 	echo -e "别名(Remarks)：${hostname}"
 	echo -e "地址(Address)：${Address}"
