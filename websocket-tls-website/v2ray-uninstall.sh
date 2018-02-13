@@ -28,7 +28,7 @@ function checkos(){
 function uninstall_v2ray(){
     rootness
     checkos
-	cd /root/
+    cd /root/
     service v2ray stop
     update-rc.d -f v2ray remove
     systemctl disable v2ray
@@ -47,7 +47,7 @@ function uninstall_v2ray(){
     rm -rf /usr/local/caddy/Caddyfile
     rm -rf /lib/systemd/system/caddy.service
     rm -rf /v2rayindexpage
-	clear
+    clear
     echo -e "Uninstall is completed, thank you for your use!" 
 }
     uninstall_v2ray
