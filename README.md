@@ -36,5 +36,5 @@
 ![](How_To_Choose.jpg)
 #
 #
-## <li></li>若有问题，请先[Google](https://www.google.com)，若始终无法解决，请 [在Telegram上](https://www.telegram.org) 咨询<[Anonymou1968](https://t.me/Anonymou1968)**
-## <li></li>若有任何BUG，请 [在Telegram上](https://www.telegram.org) 联系**[Anonymou1968](https://t.me/Anonymou1968)**。
+## <li>若有问题，请先 <a href="https://www.google.com">Google</a> ，若始终无法解决，请 <a href="https://www.telegram.org">在Telegram上</a> 咨询<a href="https://t.me/Anonymou1968">Anonymou1968</a></li>
+## 欢迎指正脚本中的一些问题，若您有什么好的想法，请提交<a href="https://github.com/1715173329/v2ray-easy-to-use/issues">Issue</a>
