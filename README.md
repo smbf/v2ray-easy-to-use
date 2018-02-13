@@ -1,4 +1,4 @@
-# 简单介绍
+# 介绍
 ### 这是一些V2Ray的简易脚本，以方便初学者快速上手。
 #
 ## [http-dynport](https://github.com/1715173329/v2ray-easy-to-use/blob/master/http-dynport)
