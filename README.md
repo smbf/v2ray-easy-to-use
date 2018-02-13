@@ -36,5 +36,5 @@
 ![](How_To_Choose.jpg)
 #
 #
-# 若有问题，请先[Google](https://www.google.com)，若始终无法解决，请 [在Telegram上](https://www.telegram.org) 咨询**[Anonymou1968](https://t.me/Anonymou1968)**
-# 若有任何BUG，请 [在Telegram上](https://www.telegram.org) 联系**[Anonymou1968](https://t.me/Anonymou1968)**。
+## <li></li>若有问题，请先[Google](https://www.google.com)，若始终无法解决，请 [在Telegram上](https://www.telegram.org) 咨询<[Anonymou1968](https://t.me/Anonymou1968)**
+## <li></li>若有任何BUG，请 [在Telegram上](https://www.telegram.org) 联系**[Anonymou1968](https://t.me/Anonymou1968)**。
