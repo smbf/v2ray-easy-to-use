@@ -28,3 +28,7 @@
 ## [websocket-tls-website](https://github.com/1715173329/v2ray-easy-to-use/blob/master/websocket-tls-website)
 ### Websocket+TLS+Website
 #### 手动配置难度：普通
+#
+#
+**如何选取适合自己的配置**：
+![](How_To_Choose.jpg)
