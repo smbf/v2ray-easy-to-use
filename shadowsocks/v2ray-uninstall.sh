@@ -8,7 +8,6 @@ function rootness(){
        echo "Error:This script must be run as root,please run 'sudo su' first." 1>&2
        exit 1
     fi
-
 }
  
  
@@ -37,7 +36,7 @@ function uninstall_v2ray(){
     rm -rf /var/log/v2ray
     rm -rf /lib/systemd/system/v2ray.service
     rm -rf /etc/init.d/v2ray
-	clear
+    clear
     echo -e "Uninstall is completed, thank you for your use!" 
 }
     uninstall_v2ray
