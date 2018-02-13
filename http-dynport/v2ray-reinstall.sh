@@ -42,8 +42,8 @@ function checkenv(){
 function reinstall_v2ray(){
     checkos
     rootness
-	checkenv
-	bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/v2ray-uninstall.sh)
-	bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/v2ray-install.sh)
+    checkenv
+    bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/v2ray-uninstall.sh)
+    bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/v2ray-install.sh)
 }
     reinstall_v2ray
