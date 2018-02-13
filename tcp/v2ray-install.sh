@@ -27,11 +27,11 @@ function checkos(){
 
 function checkenv(){
     if [[ $OS = "centos" ]]; then
-	    yum upgrade -y
+        yum upgrade -y
         yum update -y
         yum install wget curl ntpdate -y
     else
-	    apt-get -y upgrade
+        apt-get -y upgrade
         apt-get -y update
         apt-get -y install wget curl ntpdate
     fi
@@ -43,22 +43,22 @@ function install_v2ray(){
     checkos
     checkenv
     ntpdate time.nist.gov
-    bash <(curl https://tcp.v2ray-install.ml/install-release.sh)
+    bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/tcp/install-release.sh)
     rm -rf "/etc/v2ray/config.json"
-    wget -qO /etc/v2ray/config.json "https://tcp.v2ray-install.ml/config.json" 
+    wget -qO /etc/v2ray/config.json "https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/tcp/config.json" 
     UUID=$(cat /proc/sys/kernel/random/uuid)
     hostname=$(hostname)
-	Address=$(curl https://ipinfo.io/ip)
+    Address=$(curl https://ipinfo.io/ip)
     sed -i "s/3922f464-d02d-4124-82bf-ad350c19aacf/${UUID}/g" "/etc/v2ray/config.json"
     service v2ray restart
-	clear
+    clear
     echo -e "您的连接信息如下："
-	echo -e "别名(Remarks)：${hostname}"
-	echo -e "地址(Address)：${Address}"
-	echo -e "端口(Port)：8080"
-	echo -e "用户ID(ID)：${UUID}"
-	echo -e "额外ID(AlterID)：100"
-	echo -e "加密方式(Security)：aes-128-gcm"
-	echo -e "传输协议(Network）：tcp"
+    echo -e "别名(Remarks)：${hostname}"
+    echo -e "地址(Address)：${Address}"
+    echo -e "端口(Port)：8080"
+    echo -e "用户ID(ID)：${UUID}"
+    echo -e "额外ID(AlterID)：100"
+    echo -e "加密方式(Security)：aes-128-gcm"
+    echo -e "传输协议(Network）：tcp"
 }
     install_v2ray
