@@ -43,16 +43,16 @@ function install_v2ray(){
     checkos
     checkenv
     ntpdate time.nist.gov
-    bash <(curl https://websocket-tls-website.v2ray-install.ml/install-release.sh)
+    bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/websocket-tls-website/install-release.sh)
     rm "/etc/v2ray/config.json" -rf 
-    wget -qO /etc/v2ray/config.json "https://websocket-tls-website.v2ray-install.ml/config.json" 
+    wget -qO /etc/v2ray/config.json "https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/websocket-tls-website/config.json" 
     service v2ray restart
     bash <(curl https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh)
-    wget -qO /usr/local/caddy/Caddyfile "https://websocket-tls-website.v2ray-install.ml/Caddyfile" 
+    wget -qO /usr/local/caddy/Caddyfile "https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/websocket-tls-website/Caddyfile" 
     cd /root/
     mkdir /v2rayindexpage
     cd /v2rayindexpage
-    wget https://websocket-tls-website.v2ray-install.ml/webpage.zip
+    wget https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/websocket-tls-website/webpage.zip
     unzip webpage.zip
     rm -rf webpage.zip
     echo -e "请输入您的域名："
@@ -72,8 +72,8 @@ function install_v2ray(){
     sed -i "s/10000/${PORT}/g" "/usr/local/caddy/Caddyfile"
     sed -i "s#V2rayAddress#https://${Address}#g" "/usr/local/caddy/Caddyfile"
     service v2ray restart && service caddy restart
-	cd /root/
-	clear
+    cd /root/
+    clear
     echo -e "\n这是您的连接信息：\n别名(Remarks)：${hostname}\n地址(Address)：${Address}\n端口(Port):443\n用户ID(ID):${UUID}\n额外ID(AlterID):100\n加密方式(Security)：none\n传输协议(Network）：ws\n伪装类型(Type）：none\n伪装域名/其他项：/tmp/video/${UUID}\n底层传输安全(TLS)：tls\n"
 }
     install_v2ray
