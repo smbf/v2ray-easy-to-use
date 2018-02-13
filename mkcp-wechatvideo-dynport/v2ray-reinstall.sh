@@ -28,11 +28,11 @@ function checkos(){
 
 function checkenv(){
     if [[ $OS = "centos" ]]; then
-	    yum upgrade -y
+        yum upgrade -y
         yum update -y
         yum install wget curl -y
     else
-	    apt-get -y upgrade
+        apt-get -y upgrade
         apt-get -y update
         apt-get -y install wget curl
     fi
@@ -42,8 +42,8 @@ function checkenv(){
 function reinstall_v2ray(){
     checkos
     rootness
-	checkenv
-	bash <(curl https://mkcp-wechatvideo-dynport.v2ray-install.ml/v2ray-uninstall.sh)
-	bash <(curl https://mkcp-wechatvideo-dynport.v2ray-install.ml/v2ray-install.sh)
+    checkenv
+    bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/mkcp-wechatvideo-dynport/v2ray-uninstall.sh)
+    bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/mkcp-wechatvideo-dynport/v2ray-install.sh)
 }
     reinstall_v2ray
