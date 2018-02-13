@@ -40,3 +40,14 @@
 ### <li>欢迎指正脚本中的存在的问题。</li>
 ### <li>若有问题，请先<b><a href="https://www.google.com">Google</a></b>，若始终无法解决，请在<b><a href="https://www.telegram.org">Telegram</a></b>上咨询<b><a href="https://t.me/Anonymou1968">Anonymou1968</a></b>。</li>
 ### <li>若您有什么的别的想法或者需要我制作其他的一些脚本，请提交<a href="https://github.com/1715173329/v2ray-easy-to-use/issues">Issue</a>。</li>
+<!-- Google Analytics Start !-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113629924-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113629924-1');
+</script>
+<!-- Google Analytics End !-->
