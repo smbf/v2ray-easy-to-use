@@ -1,6 +1,6 @@
-# 介绍
-### 这是 **HTTP伪装+动态端口** 的一键脚本。
-#
+# 介绍：
+### 这是 **HTTP伪装+动态端口** 的一键部署脚本。
+- - -
 ## 使用：
 **一键安装脚本：** <br />
 `bash <(curl https://raw.githubusercontent.com/1715173329/v2ray-easy-to-use/master/http-dynport/install.sh)`
