@@ -38,7 +38,7 @@ function checkbit(){
 function uninstall_v2ray(){
     rootness
     checkos
-	checkbit
+    checkbit
     service v2ray stop
     update-rc.d -f v2ray remove
     systemctl disable v2ray
@@ -47,12 +47,12 @@ function uninstall_v2ray(){
     rm -rf /var/log/v2ray
     rm -rf /lib/systemd/system/v2ray.service
     rm -rf /etc/init.d/v2ray
-	kill -9 $(ps -ef|grep "udp2raw_amd64"|grep -v grep|awk '{print $2}')
-	kill -9 $(ps -ef|grep "speederv2_amd64"|grep -v grep|awk '{print $2}')
-	rm -rf /root/udp2raw
-	rm -rf /root/udpspeeder
-	rm -rf /etc/rc.d/rc.local
-	clear
+    kill -9 $(ps -ef|grep "udp2raw_amd64"|grep -v grep|awk '{print $2}')
+    kill -9 $(ps -ef|grep "speederv2_amd64"|grep -v grep|awk '{print $2}')
+    rm -rf /root/udp2raw
+    rm -rf /root/udpspeeder
+    rm -rf /etc/rc.d/rc.local
+    clear
     echo -e "Uninstall is completed, thank you for your use!" 
 }
     uninstall_v2ray
