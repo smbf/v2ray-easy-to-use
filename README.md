@@ -1,2 +1,2 @@
-# v2ray-easy-to-use
-<b>V2RAY EASY TO USE</b>
+# 简单介绍
+## 这是一些V2Ray的简易脚本，以方便初学者快速上手。
