@@ -1,0 +1,9 @@
+V2rayAddress
+{
+  root /v2rayindexpage
+  tls website-tls@gmail.com
+  proxy /tmp/video localhost:10000 {
+    websocket
+    header_upstream -Origin
+  }
+}

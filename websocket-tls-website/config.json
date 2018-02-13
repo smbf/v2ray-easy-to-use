@@ -1,0 +1,25 @@
+{
+  "inbound": {
+    "port": 10000,
+    "listen":"127.0.0.1",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "3922f464-d02d-4124-82bf-ad350c19aacf",
+          "alterId": 100
+        }
+      ]
+    },
+    "streamSettings":{
+      "network":"ws",
+      "wsSettings": {
+      "path": "/tmp/video"
+      }
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  }
+}
