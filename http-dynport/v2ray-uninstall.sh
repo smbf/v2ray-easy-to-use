@@ -37,7 +37,7 @@ function uninstall_v2ray(){
     rm -rf /var/log/v2ray
     rm -rf /lib/systemd/system/v2ray.service
     rm -rf /etc/init.d/v2ray
-	clear
+    clear
     echo -e "Uninstall is completed, thank you for your use!" 
 }
     uninstall_v2ray
